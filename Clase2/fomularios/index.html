@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <!--Ahora necesitamos recolectar informacion del usuario/a-->
+    <form><!--dentro de form necesitamos colocar diferentes campos para recolectar informacion-->
+        <input>
+    </form>
+    <p>¿Cómo se ve?:</p>
+    <img src="img/input_etiqueta.png" alt="soy_una_etiqueta_de_input">
+    <hr>
+    <!--No tenemos idea a que hace referencia este campo de texto, volvemos hacer otro:-->
+    <form><!--Para que haga sentido el dato que queremos recompilar del usuario/a tenemos que indicarle una etiqueta:label -->
+        <label>Nombre:</label><!--Acá indicamos el dato que estamos solicitando-->
+        <input>
+    </form>
+    <p>Por ejemplo si hacemos click al nombre selecciona el "nombre", no el campo para escribir</p>
+    <hr>
+    <p>La idea es que tenga foco al campo de texto, lo que hacemos es usar: Las Propiedades </p>
+    <form>
+        <label for="apellido">Apellido:</label><!--Acá tenemos que poner el nombre del identificador del campo que queremos hacer foco-->
+        <input id="apellido"> <!--Acá agregamos el identificador que hace referencia el label-->
+    </form>
+    <p>Ahora sigue apareciendo nuestra etiqueta nombre pero cuando hacemos click hace foco al campo del input</p>
+    <hr>
+    <!--Dentro de las propiedades de la etiqueta input hay una MUY importante:-->
+    <p>Otra propiedad que vamos a ver importante es la propiedad name y llave-valor:</p>
+    <form>
+        <label for="sobrenombre">SobreNombre:</label>
+        <input id="sobrenombre" name="sobrenombre"><!--La propiedad de name es importante porque cuando enviemos este formulario para algun servidor, el servidor va a interpretar los datos del formulario por el nombre que indiquemos acá-->
+        <!--El servidor va a recibir un objeto de formulario el cual va a contener una llave y un valor, la llave es lo que le indiquemos en "name="" y el valor se va a referir al contenido que tenemos en nuestro campo"-->
+        <!--Si yo coloco nombre en name el servidor va a recibir un objeto llave valor en donde la llave es NOMBRE y el valor es lo que se escribe en el campo, por ejemplo LISA-->
+    </form>
+    <hr>
+    <p>Otra propiedad que vamos a ver es placeholder</p>
+    <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" placeholder="Name"><!--Lo que aparece en gris dentro del campo-->
+    </form>
+    <hr>
+    <p>Otra propiedad que vamos a ver de input es la propiedad type,</p>
+    <form>
+        <label for="lastname">Last Name::</label>
+        <input type="lastname" id="lastname" placeholder="last name"> <!--Se puede asignar diferentes valores para que nuestra etiqueta input se comporte de manera diferente-->
+    </form>
+    <p>Por ejemplo dentro de type le paso submit:(cambia todo si cambio la propiedad type)</p>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="submit"><!--Mi campo se transforma en un botón-->
+    </form>
+    <p>Algunos valores recurrentes dentro de la propiedad de type: email / password </p>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="email"><!--valor email-->
+    </form>
+    <p>También existe el de password que oculta el valor</p>
+    <form>
+        <input type="password">
+    </form>
+    <p>También existe el type Radio</p>
+    <form>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+    </form>
+    <p>También existe el type checkbox</p>
+    <form>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </form>
+    <p>También existe el type file que es para subir un archivo</p>
+    <form>
+        <input type="file">
+    </form>
+    <hr>
+    <p>Por ahora nos vamos a mentener con type texto:</p>
+    <form>
+        <!--Podemos agregar todos los campos que nos gustaría con la etiqueta form:-->
+        <label for="fuit">Fruta preferida:</label>
+        <input type="text" id="fruit" placeholder="Escribi tu fruta preferida">
+        <br>
+        <label for="ice">Helado preferido:</label>
+        <input type="text" id="ice" placeholder="Escribi tu helado preferido">
+        <br><!--Otra etiqueta que se usa es la de textarea:-->
+        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingrese su comentario de cosas preferidas"></textarea>
+    </form>
+   
+    
+</body>
+</html>
