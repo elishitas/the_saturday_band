@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tablas</title>
+</head>
+<body>
+    <p>Una tabla se divide en filas y columnas</p>
+    <!--Cada una de las columnas tiene una cabecera y puede tener un pie-->
+
+    <table>
+        <!--tr quiere decir Table-Row o una fila dentro de nuestra tabla-->
+        <tr>
+            <!--Si queremos indicar una cabecera tenemos que indicarlo con la etiqueta th-->
+            <!--Los elementos de th se encuentran centrados a nuestra columna-->       
+            <th>Producto</th>
+            <th>Precio</th>
+            <!--Cada vez que agregamos una etiqueta th genera una columna (también lo hace con etiquetas th - cuidado con eso)-->
+            <th>Color</th>
+        </tr>
+        <tr>
+            <!--Elementos estandar que se encuetran dentro de la celda de nuestra tabla-->
+            <!--Los elementos de td se encuentran alineados a la izquierda-->  
+            <td>Monitor</td>
+            <td>1peso</td>
+            <td>rojo</td>
+        </tr>
+        <!--Si queres agregar mas datos:-->
+        <tr>
+            <!--Lo agrega como una nueva fila-->
+            <td>Mouse</td>
+            <td>2peso</td>
+            <td>verde</td>
+        </tr>
+        <tr>
+            <!--observa nuevamente que se encuentra alineado a la izquierda con este ejemplo:-->
+            <td>Mouse superpoderoso</td>
+            <td>296589554peso</td>
+            <td>verde flama</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!--Ahora lo que quiero es que los elementos tengan una separación entre ellos para visualizarlo mejor:-->
+    <!--RECORDATORIO IMPORTANTE: Esto se hace en css a futuro-->
+
+    <table style="border: 1px solid black">
+        <tr>
+            <th style="border: 1px solid black;">Fruta</th>
+            <th style="border: 1px solid black;">Precio</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;" >Manzana</td>
+            <td  style="border: 1px solid black;">29.90</td>
+        </tr>
+        <tr>
+            <td  style="border: 1px solid black;" >Naranja</td>
+            <td  style="border: 1px solid black;" >59.90</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;" >Sandia</td>
+            <td  style="border: 1px solid black;" >59.90</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!--Ahora lo que quiero es separarlo de manera lógica: Una parte de cabecera y otro es el contenido de la tabla-->
+    <table>
+        <!--agrupa elementos que se encuentran en la cabecera de la tabla thead-->
+        <thead>
+            <tr>
+                <th>Especies</th>
+                <th>precio</th>
+            </tr>
+        </thead>
+        <!--agrupa todas las filas que pertenezcan al cuerpo de nuestra tabla-->
+        <tbody>
+            <tr>
+                <td>Comino</td>
+                <td>29.99</td>
+            </tr>
+            <tr>
+                <td>Oregano</td>
+                <td>39.99</td>
+            </tr>
+        </tbody>
+            <!--Es el pie de nuestra tabla-->
+        <tfoot>
+            <td></td>
+            <td>Total: 59.98</td>
+        </tfoot>
+    </table>
+    <!--De la fila 69 a la 88 el estilo NO cambia, solamente sirve para que algunos exploradores web
+    puedan habilitar un scroll del contenido separado de la cabecera y del pie de nuestra tabla -->
+
+    <hr>
+    <a href="https://www.w3schools.com/html/html_tables.asp" target="_blank"> para leer sobre tablas</a>
+
+</body>
+</html>

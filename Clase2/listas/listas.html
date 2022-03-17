@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Hola Listas</h1>
+    <p>Sirven para colocar diferentes elementos en nuestra web</p>
+
+    <!--Ul es lista NO ordenada, los mismos aparece con un puntito en negro-->
+    <ul>  
+        <!--Esto quiere decir List Item o Item de la lista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+
+    <!--¿Qué pasa si quiero enumerar todos los elementos que tengo en una lista-->
+    <!--Lo hacemos con la etiqueta OL o order list o lista ordenada-->
+    <!--De esta manera se empieza a listar elemento dentro de nuestra página web-->
+    <ol>  
+        <!--Esto quiere decir List Item o Item de la lista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ol>
+
+    <!--Si quiero que un valor especifico que empiece mis lista ordenada tengo que usar ATRIBUTOS-->
+    <ol>  
+        <li value="10">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ol>
+
+    <!--Si quiero empezar a nidar listas:-->
+    <ol>  
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <!--En este caso estoy usando el valor de letras que empieza con A pero pueden cambiar el valor de lower-alpha por núm romanos o lo que quieran-->
+                <li style="list-style-type: lower-alpha;">Sub Elemento1</li>
+                <li style="list-style-type: lower-alpha;">Sub Elemento2</li>
+                <li style="list-style-type: lower-alpha;">Sub Elemento3</li>
+            </ol>
+        </li> 
+    </ol>
+    
+    <hr>
+
+    <a href="https://www.w3schools.com/html/html_lists.asp" target="_blank"> para leer sobre Listas</a>
+    
+</body>
+</html>

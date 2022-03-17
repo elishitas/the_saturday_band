@@ -1,0 +1,13 @@
+1.ero armate tu lugar de trabajo:
+Una carpeta en donde tengas todas las clases:
+Ejemplo
+
+Carpeta principal: 
+-workplace
+
+Carpetas internas: 
+-Clase1
+-Clase2
+-Clase3
+-Clase4
+Etcetera 
