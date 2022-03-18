@@ -85,9 +85,65 @@
         <label for="ice">Helado preferido:</label>
         <input type="text" id="ice" placeholder="Escribi tu helado preferido">
         <br><!--Otra etiqueta que se usa es la de textarea:-->
-        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="ingrese su comentario de cosas preferidas"></textarea>
+        <textarea name="comentario1" id="comentario" cols="30" rows="10" placeholder="ingrese su comentario de cosas preferidas|"></textarea>
     </form>
-   
+    <hr>
+    <p>También se puede cambiar las propiedades de rows y cols de texarea</p>
+    <form>
+        <!--se puede cambiar las dimensiones de textarea-->
+        <label for="comentaraio2">Comentario Nuevo</label>
+        <textarea name="comentaraio2" id="comentaraio_nuevo" cols="25" rows="2"></textarea> <!--cols columnas, rows filas-->
+    </form>
+    <hr>
+    <p>Ahora vamos a concentrarnos en el botón</p>
+    <p>Cuando hacemos click en el botón va a tomar todos los valores de nuestros campos que se encuentren en el formulario y lo va a mandar a alguna parte</p>
+    <p>Esa parte es el SERVIDOR</p>
+    <P>¿A dónde lo va a enviar? Tenemos que especificar en donde queremos que vayan todos estos datos</P>
+    <p>Dentro de la etiqueta form tenemos que pasarle la propiedad de ACTION</p>
+    <P>Action tiene que contener una ruta dentro de nuestro servidor o dentro de otra aplicación o dentro de otra web</P>
+    <p>En este caso nuestra accion es que se envie a formulario</p>
+    <p>Cuando apretamos enviar mira la ruta que aparece</p>
+    <form action="/fomularios">
+        <label for="colour">Color Preferido</label>
+        <input type="text" id="colour">
+        <input type="submit">
+    </form>
+    <hr>
+    <p>Depués de todo esto también hay que indicar el metodo que vamos a utilizar para enviar los datos a nuestro servidor</p>
+    <p>Tenemos dos alternativas: get y post</p>
+    <p>Get lo que hará es enviar los valores que se encuentran dentro de los campos a través de la url</p>
+    <p>Cómo funciona:</p>
+    <form action="formulario1" method="GET">
+        <textarea name="comentario3" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">   
+    </form>
+    <p>Imagen:</p>
+    <img src="img/comentario3.png" alt="metodo_get">
+    <img src="img/url_comentario3.png" alt="url_get">
+    <hr>
+    <p>Ahora vamos a ver que pasa con el metodo POST</p>
+    <p>Cómo funciona:</p>
+    <form action="formulario2" method="POST">
+        <textarea name="comentario4" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit">   
+    </form>
+    <p>Imagen:</p>
+    <img src="img/comentario4.png" alt="metodo_post">
+    <img src="img/url_post.png" alt="url_post">
+    <p>¿Dónde están los datos?</p>
+    <p>Click derecho Inspeccionar, network, formulario2, paylod se ve toda la información</p>
+    <img src="img/inf_form2.png" alt="información desde network con metodo post">
+    <hr>
+    <p>¿Cuál es la mejor forma de enviar los datos?</p>
+    <p>Hay que tener cuidado si se utiliza metodo de get creo que la URL máxima que podemos generar son 250 carácteres</p>
+    <p>Si estas utilizando muchos pero muchos campos conviene post</p>
+    <p>¿Crees que los datos que se envian se estan enviando de una forma segura porque losd datos NO aparecen en la URL?</p>
+    <P>POST no es seguro porque igual se puede acceder en network</P>
+    <p>Son 2 formas de enviar datos</p>
+    <p>¿Cuál es la forma segura? Utilizando certificados que se encarguen de encriptar todas nuestras conexiones pero no se ve en este curso</p>
+    <p>Importante! Post no es seguro por si solo, envía los datos en las cabeceras en vez que en las urls</p>
     
 </body>
 </html>
