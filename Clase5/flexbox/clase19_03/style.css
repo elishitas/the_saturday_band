@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    height: 500px;
+    outline: 2px solid red;
+    margin: 20px auto;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(169, 169, 238);
+    color:white;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 100px;
+}
+
+.item2 {
+    background: blue;
+}
+
+.item3 {
+    background: orangered;
+}
+
+.item4{
+    background: plum;
+}
