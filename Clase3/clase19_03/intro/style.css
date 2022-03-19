@@ -1,0 +1,94 @@
+*{
+    font-size: 14px;
+}
+
+.left {
+    float: left;
+}
+
+ul{
+    background-color: chocolate;
+    list-style-type: none;
+    padding-left: 0;
+
+}
+
+#fondo {
+    background-color: rgba(255,0,0);
+    color: white;
+    background-image: url("paltas.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-size:contain;
+    background-position: center top;
+}
+
+.margen{
+    background-color: tomato;
+    margin:15px;
+    padding:30px;
+    border: solid 1px black;
+    height: 200px;
+    width: 50px;
+}
+
+/*
+.color {
+    color: rgb(236, 135, 135);
+}
+*/
+/*.color {
+    border: 8px red outset;
+}
+
+/*
+dotted
+dashed
+solid
+double
+groove
+ridge
+outsed
+none
+hidden
+
+*/
+
+.color {
+    border-style: solid;
+    border-color: blue;
+    border-radius: 2px;
+    border-width: 5px;
+}
+
+#titulo {
+    color: blueviolet;
+    font-size: 50px;
+}
+
+p.texto {
+    color: blue;
+    font-size: 30px;
+}
+
+p.especial {
+    color: chartreuse;
+}
+
+div p {
+    color: darkcyan;
+}
+
+div h2, div h3 {
+    color: darkorange;
+}
+
+/*Aca pueden poner un comentario*/
+
+/*
+Esto
+es un comentario
+largo
+muy muy largo
+*/
+
